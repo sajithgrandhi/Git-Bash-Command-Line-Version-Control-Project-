@@ -1,4 +1,4 @@
-<img width="1340" height="918" alt="Screenshot 2026-01-03 134353" src="https://github.com/user-attachments/assets/5792b625-110d-4284-887d-bcaa9164fb18" />The Student Record System is a simple web-based application developed using HTML, CSS, and JavaScript.
+The Student Record System is a simple web-based application developed using HTML, CSS, and JavaScript.
 The project is designed to demonstrate the practical use of Git Bash and GitHub as part of the Fundamentals of DevOps (INT-331) course.
 
 The main objective of this project is not only to build a basic student management interface, but also to apply version control concepts such as repository initialization, branching, merging, conflict resolution, and remote repository synchronization.
