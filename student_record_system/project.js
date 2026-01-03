@@ -174,36 +174,5 @@ document.addEventListener('DOMContentLoaded', function() {
         editId = null;
     }
     
-    // Update statistics
-    function updateStatistics() {
-        // Total students
-        totalStudentsEl.textContent = students.length;
-        
-        // Average age
-        const totalAge = students.reduce((sum, student) => sum + student.age, 0);
-        const avgAge = students.length > 0 ? (totalAge / students.length).toFixed(1) : 0;
-        averageAgeEl.textContent = avgAge;
-        
-        // Grade distribution
-        gradeDistributionEl.innerHTML = '';
-        
-        const gradeCounts = {};
-        students.forEach(student => {
-            gradeCounts[student.grade] = (gradeCounts[student.grade] || 0) + 1;
-        });
-        
-        for (const grade in gradeCounts) {
-            const li = document.createElement('li');
-            li.textContent = `${grade}: ${gradeCounts[grade]} student(s)`;
-            gradeDistributionEl.appendChild(li);
-        }
-    }
-    
-    // Save to localStorage
-    function saveToLocalStorage() {
-        localStorage.setItem('students', JSON.stringify(students));
-    }
-    
-    // Initialize the application
-    init();
+  
 });
